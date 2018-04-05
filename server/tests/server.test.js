@@ -30,7 +30,7 @@ var text="Test todo text";
                 done();
             }).catch((e)=>{
                 done(e);
-            })
-        })
-})
-})
+            });
+        });
+});
+});
