@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server.js",
     "test": "mocha server/**/*.test.js",
     "test-watch":"nodemon --exec \"npm test\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xcodemaker/Node-api.git"
+  },
+  "engines": {
+    "node":"8.10.0"
   },
   "author": "dhammikadsk",
   "license": "ISC",
