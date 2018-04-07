@@ -1,4 +1,5 @@
 const express=require('express');
+const cors = require('cors');
 const bodyParser=require('body-parser');
 const {ObjectID}=require('mongodb');
 
@@ -8,6 +9,9 @@ var {User}=require('./models/user');
 
 const _ =require('lodash');
 var app=express();
+
+app.use(cors());
+app.options('*', cors());
 
 const port=process.env.PORT || 3000;
 
